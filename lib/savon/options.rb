@@ -343,6 +343,14 @@ module Savon
     def follow_redirects(follow_redirects)
       @options[:follow_redirects] = follow_redirects
     end
+
+    def from(from)
+      @options[:from] = from
+    end
+
+    def to(to)
+      @options[:to] = to
+    end
   end
 
   class LocalOptions < Options
