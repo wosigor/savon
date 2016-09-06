@@ -61,8 +61,8 @@ module Savon
        convert_to_xml({
          'wsa:Action' => @locals[:soap_action],
          'wsa:From' => @globals[:from],
-         'wsa:To' => @globals[:to],
-         'wsa:MessageID' => "urn:uuid:#{SecureRandom.uuid}"
+         'wsa:MessageID' => "urn:uuid:#{SecureRandom.uuid}",
+         'wsa:To' => @globals[:to]
        })
     end
 
