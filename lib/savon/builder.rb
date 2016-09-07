@@ -8,8 +8,6 @@ module Savon
   class Builder
 
     SCHEMA_TYPES = {
-      "xmlns:xsd" => "http://www.w3.org/2001/XMLSchema",
-      "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance"
     }
 
     SOAP_NAMESPACE = {
@@ -17,7 +15,7 @@ module Savon
       2 => "http://www.w3.org/2003/05/soap-envelope"
     }
 
-    WSA_NAMESPACE = "http://www.w3.org/2004/08/addressing"
+    WSA_NAMESPACE = "http://schemas.xmlsoap.org/ws/2004/08/addressing"
 
     def initialize(operation_name, wsdl, globals, locals)
       @operation_name = operation_name
